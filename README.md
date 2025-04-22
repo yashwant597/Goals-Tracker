@@ -3,7 +3,7 @@
 A minimal and modern personal productivity tracker built with HTML, CSS, and JavaScript.
 
 # Preview
-<img src="assets/Preview.png" alt="Goals Tracker Preview" width="400" height="300"/>
+<img src="assets/Preview.jpg" alt="Goals Tracker Preview" width="400" height="300"/>
 
 ## Features
 
