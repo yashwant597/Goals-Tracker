@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Goals Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.jpg">
+</head>
+<body>
+    <header>
+        <h1>Tiny Goals Tracker</h1>
+        <p class="subtitle">Track your personal goals with simplicity</p>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value" id="total-count">0</div>
+                <div class="stat-label">Total</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="completed-count">0</div>
+                <div class="stat-label">Completed</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="pending-count">0</div>
+                <div class="stat-label">Pending</div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="goal-input-container">
+            <input type="text" class="goal-input" id="goal-input" placeholder="Add a new goal..." autocomplete="off" maxlength="100">
+            <button class="add-btn" id="add-goal">Add Goal</button>
+        </div>
+        
+        <div class="search-container">
+            <input type="text" class="search-input" id="search-input" placeholder="Search goals...">
+        </div>
+        
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+        
+        <div class="goals-container">
+            <ul class="goals-list" id="goals-list"></ul>
+            <div class="loader" id="loader"></div>
+            <div class="no-results" id="no-results">No goals found</div>
+            <div class="empty-state" id="empty-state">
+                <p>No goals added yet. Add your first goal above!</p>
+            </div>
+            <button class="clear-completed" id="clear-completed">Clear completed</button>
+        </div>
+
+        <!-- Error notification -->
+        <div class="notification" id="notification">
+            <div class="notification-content">
+                <span id="notification-message"></span>
+                <button id="notification-close">×</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
