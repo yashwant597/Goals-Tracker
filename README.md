@@ -1,9 +1,9 @@
-# Tiny Goals Tracker
+# Goals Tracker
 
 A minimal and modern personal productivity tracker built with HTML, CSS, and JavaScript.
 
 # Preview
-![Tiny Goals Tracker Preview](assets/Preview.jpg)
+<img src="assets/Preview.png" alt="Goals Tracker Preview" width="400" height="300"/>
 
 ## Features
 
