@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiny Goals Tracker</title>
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Goals Tracker</h1>
+    <form id="goalForm">
+      <input type="text" id="goalInput" placeholder="Enter new goal..." required />
+      <input type="date" id="goalDate" required />
+      <button type="submit">Add</button>
+    </form>
+    <div class="filter-container">
+      <label>Filter:
+        <select id="filterSelect">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="pending">Pending</option>
+        </select>
+      </label>
+    </div>
+    <ul id="goalList"></ul>
+  </div>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
